@@ -1,4 +1,4 @@
-package com.lopez_jorge.room_t7
+package com.lopez_jorge.room_t7.navigation
 
 sealed class Routes(val route: String) {
     object SplashScreen: Routes("splash_screen")

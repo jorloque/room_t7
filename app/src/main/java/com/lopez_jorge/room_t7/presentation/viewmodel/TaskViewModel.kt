@@ -1,17 +1,20 @@
-package com.lopez_jorge.room_t7
+package com.lopez_jorge.room_t7.presentation.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.lopez_jorge.room_t7.data.TaskDAO
+import com.lopez_jorge.room_t7.data.TaskEntity
+import com.lopez_jorge.room_t7.data.TasksDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class TaskViewModel(application: Application) : AndroidViewModel(application) {
 
     // Se crea una instancia del DAO
-    val taskDAO: TaskDAO = TasksDatabase.getInstance(application)
+    val taskDAO: TaskDAO = TasksDatabase.Companion.getInstance(application)
     // Se crea un LiveData para la lista de tareas que observará al "SELECT *" del DAO
     var taskList: LiveData<MutableList<TaskEntity>> = MutableLiveData()
     // Función que inicializa la lista de tareas desde la BBDD

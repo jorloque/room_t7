@@ -1,4 +1,4 @@
-package com.lopez_jorge.room_t7
+package com.lopez_jorge.room_t7.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -27,6 +27,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.lopez_jorge.room_t7.R
+import com.lopez_jorge.room_t7.navigation.Routes
+import com.lopez_jorge.room_t7.presentation.viewmodel.TaskViewModel
 import kotlinx.coroutines.delay
 
 @Composable

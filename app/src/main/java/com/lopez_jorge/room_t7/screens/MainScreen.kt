@@ -1,5 +1,5 @@
 // MainScreen.kt
-package com.lopez_jorge.room_t7
+package com.lopez_jorge.room_t7.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -18,6 +18,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.lopez_jorge.room_t7.data.TaskEntity
+import com.lopez_jorge.room_t7.presentation.viewmodel.TaskViewModel
 
 @Composable
 fun MainScreen(

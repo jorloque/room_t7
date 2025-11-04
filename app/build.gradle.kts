@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-    // ⚡ Agrega versión explícita del plugin KSP
+    // Agrega versión explícita del plugin KSP
     id("com.google.devtools.ksp") version "2.0.21-1.0.26"
 }
 
@@ -47,26 +47,26 @@ android {
 
 dependencies {
 
-    // ✅ Room (con KSP)
+    // Room (con KSP)
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
 
-    // ✅ Compose
+    // Compose
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
     implementation(platform(libs.androidx.compose.bom))
 
-    // ✅ ViewModel + LiveData + Compose
+    // ViewModel + LiveData + Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation("androidx.compose.runtime:runtime-livedata")
 
-    // ✅ Navegación Compose
+    // Navegación Compose
     implementation("androidx.navigation:navigation-compose:2.8.4")
 
-    // ✅ Librerías base
+    // Librerías base
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.ui)
@@ -75,7 +75,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.material3)
 
-    // ✅ Tests
+    // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
